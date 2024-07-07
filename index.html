@@ -7,23 +7,23 @@
     <link rel="stylesheet" href="./vendor/bootstrap-5.0.2/css/bootstrap.min.css">
     <script src="./vendor/bootstrap-5.0.2/js/bootstrap.min.js"></script>
     <link href="./vendor/dataTable-1.13.6/datatables.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./vendor/font-awesome-4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="./vendor/fontawesome-free-6.5.2-web/css/all.min.css"/>
     <link rel="stylesheet" href="./css/custom.css">
 </head>
 <body>
-    <div class="intro">
-        <div class="profile-pic">
-            <img src="./img/442649509_975890263780631_183620361781952221_n.jpg" alt="Sunshine's profile pic" width="400">
+    <div id="intro">
+        <div class="profile-pic pt-5">
+            <img src="./img/442649509_975890263780631_183620361781952221_n.jpg" alt="Sunshine's profile pic" width="300">
         </div>
         <h1>HELLO! I'M SUNSHINE - UI DESIGNER AND WEB DEVELOPING ENTHUSIAST.</h1>
         <p>based in Zamboanga City, Philippines.</p>
         <div class="homeBtn pt-3">
-            <a class="btn px-3 py-2" href="#aboutme" role="button">About Me</a>
+            <a class="btn px-3 py-2" href="#aboutme">About Me</a>
         </div>
     </div>
     <section id="aboutme" class="py-5 px-5">
         <p id="section-name">About Me</p>
-        <h1>Know Me More</h1>
+        <h1>Who I am</h1>
         <div class="row">
             <div class="col">
                 <h2>Hi, I'm Sunshine Casido</h2>
@@ -36,21 +36,27 @@
         </div>
     </section>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#section1">Section 1</a>
+                        <a class="nav-link active" aria-current="page" href="#intro">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#section2">Section 2</a>
+                        <a class="nav-link" href="#aboutme">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#section3">Section 3</a>
+                        <a class="nav-link" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#section4">Section 4</a>
+                        <a class="nav-link" href="#resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -59,18 +65,228 @@
 
     <section id="services">
         <p id="section-name">What I Do?</p>
-        <h1>How I can help your next project</h1>
+        <h1>How I can help your company</h1>
         <div class="row">
-            <div class="col">
-                <img src="" >
+            <div class="col px-5">
+                <div class="py-5" style="
+                display: flex;
+                justify-content: center;
+                align-content: center;">
+                    <i class="fa-solid fa-palette fa-6x" class="icons" style="
+                    color: var(--clr-5);"></i>
+                </div>
+                
                 <h5 style="font-weight: bold;">UI Website Design</h5>
                 <p>I have experience in designing for websites that I have developed in the past few years either for prototypes or deployment.</p>
             </div>
-            <div class="col">
+            <div class="col px-5">
+                <div class="py-5" style="
+                display: flex;
+                justify-content: center;
+                align-content: center;">
+                    <i class="fa-solid fa-laptop-code fa-6x" class="icons" style="
+                    color: var(--clr-5);"></i>
+                </div>
                 <h5 style="font-weight: bold;">Backend Development</h5>
                 <p>I have experience with MySQL for the database integration in the backend development of the web application.</p>
             </div>
         </div>
     </section>
+
+    <section id="resume">
+        <p id="section-name">Resume</p>
+        <h1>A summary of my resume</h1>
+
+        <div class="row py-5">
+            <div class="col px-5">
+                <h3>My Education</h3>
+                <div class="resume-desc ps-3 mt-2">
+                    <h5>Bachelor of Science in Computer Science</h5>
+                    <p>Western Mindanao State University / 2021 - Present</p>
+                    <p class="mb-5">Thesis: Defending the Inbox: A Prevention Application for Deterring Email-Based Attacks</p>
+
+                    
+                    <h5>Science, Technology, Engineering, and Mathematics</h5>
+                    <p>Baliwasan Senior High School – Stand-Alone / 2021</p>
+                    <p class="mb-5">with Honors (Ave: 93%)</p>
+                </div>
+                <h3 class="mt-5">My Skills</h3>
+                <h5 class="my-3">Web Development</h5>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                </div>
+                <h5 class="my-3">PHP</h5>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                </div>
+            </div>
+
+            <div class="col px-5">
+                <h3>My Experience</h3>
+                <div class="resume-desc ps-3 mt-2">
+                    <h5>Data Entry to INC Information System</h5>
+                    <p>October 2021 - February 2022</p>
+                    <p class="mb-5">Input INC members information into their software application.</p>                    
+                </div>
+                
+                <h5 style="margin-top: 50%;">HTML/CSS/JS</h5>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                </div>
+                <h5 class="my-3">MySQL</h5>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="homeBtn pt-3">
+            <a class="btn px-3 py-2" href="./misc/Casido (BSCS) Curriculum Vitae (CV).pdf (BSCS) Curriculum Vitae (CV).pdf" download>Download CV</a>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <p id="section-name">Portfolio</p>
+        <h1>My most recent projects</h1>
+        <div class="row mt-5">
+            <div class="col">
+                <div class="projects mt-5">
+                    <img src="./img/bscstour2024.png" width="550">
+                    <div class="project-desc mt-2 py-2">
+                        <h4>BSCS Tour 2024 Web Blog</h4>
+                        <p>UI Design Prototype</p>
+                    </div>
+                </div>
+                <div class="projects mt-5">
+                    <img src="./img/342216516_1358403715030553_6867528831330819189_n.png" width="550">
+                    <div class="project-desc mt-2 py-2">
+                        <h4>Skytropics Beach Resort Website</h4>
+                        <p>Fullstack Web Development</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col ms-5">
+                <div class="projects mt-5">
+                    <img src="./img/purrpaws.png" width="550">
+                    <div class="project-desc mt-2 py-2">
+                        <h4>Purrpaws Veterinary Clinic Website</h4>
+                        <p>Fullstack Web Development</p>
+                    </div>
+                </div>
+                <div class="projects mt-5">
+                    <img src="./img/se.png" width="550">
+                    <div class="project-desc mt-2 py-2">
+                        <h4>ZICT Web-Based Events Management System</h4>
+                        <p>Software Engineering</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="hire-me">
+        <h1>Interested in working with me?</h1>
+        <div class="homeBtn pt-5">
+            <a class="btn px-3 py-2" href="#contact">Hire Me!</a>
+        </div>
+    </div>
+
+    <section id="contact">
+        <div class="row">
+            <div class="col">
+                <h1 class="pt-5">Let's get in touch</h1>
+                <h5>Discuss your ideas with me and I'll try my best to bring it to reality through my UI design.</h5>
+                <h4 class="pt-5">Living In:</h4>
+                <p>San Roque, Zamboanga City, Philippines</p>
+                <h4>Email</h4>
+                <p>qb202100057@wmsu.edu.ph</p>
+                <div class="pt-2 pb-5">
+                    <a href="www.facebook.com/sunshne.casido" class="fa-brands fa-facebook-f fa-2x pe-2" style="
+                    color: var(--clr-1); text-decoration: none;"></a>
+                    <a href="github.com/xscpry" class="fa-brands fa-github fa-2x ps-2" style="
+                    color: var(--clr-1); text-decoration: none;"></a>
+                </div>
+            </div>
+            <div class="col">
+                <h1 class="pt-5">What's your project?</h1>
+                <form id="contact-form" method="POST" class="form-border">
+                    <div class="row">
+                        <div class="col">
+                            <label for="name" class="form-label">Your name:</label>
+                            <input type="text" name="name" id="name" class="form-control py-1" required>
+                        </div>
+                        <div class="col">
+                            <label for="email" class="form-label">Your email address:</label>
+                            <input type="email" name="email" id="email" class="form-control py-1" required>
+                        </div>
+                        <div class="col">
+                            <label for="form-message" class="form-label">Your message:</label>
+                            <textarea name="message" id="form-message" class="form-control py-1" rows="4" required></textarea>
+                        </div>
+                        <div class="col">
+                            <div class="homeBtn pt-3" type="submit" id="submit-btn-1">
+                                <a class="btn px-3 py-2">Send 
+                                    <span class="ms-3">
+                                        <i class="fas fa-arrow-right">
+                                        </i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <p>Copyright © 2023 <a href="#intro">Sunshine</a>. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <a id="back-to-top" class="rounded-circle" data-bs-toggle="tooltip" title="" href="javascript:void(0)" data-bs-original-title="Back to Top" aria-label="Back to Top" style="display: none;"><i class="fas fa-arrow-up"></i></a>
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+          emailjs.init("tQZLGPCIMcUaVVLUj");
+        })();
+    </script>
+    
+    <script type="text/javascript">
+    function sendEmail() {
+        const templateParams = {
+        to_email: "qb202100057@wmsu.edu.ph",
+        from_email: $('#email').val(),
+        from_name: $('#name').val(),
+        message: $('#message').val(),
+        };
+        $('#submit-btn-1').prop('disabled', true);
+        emailjs.send("service_1phnb3f", "template_3v61vqs", templateParams)
+        .then((response) => {
+            console.log("Email sent:", response);
+            $('#submit-btn-1').prop('disabled', false);
+            $('#email').val('');
+            $('#name').val('');
+            $('#message').val('')
+        }, (error) => {
+            console.log("Error sending email:", error);
+        });
+    }
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('form#contact-form').submit(function(e){
+            e.preventDefault();
+            sendEmail();
+            })
+        });
+    </script>
 </body>
 </html>
